@@ -3,7 +3,19 @@ html{
     background-color: #ffd593;
     font-family:system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
+#logo{
+    width:5%;
+    height:5%;
+}
 #logo:hover{
+    transition: .5s ease;
+    filter:brightness(0%);
+}
+#logo2{
+    width:8%;
+    height:8%;
+}
+#logo2:hover{
     transition: .5s ease;
     filter:brightness(0%);
 }
@@ -11,6 +23,11 @@ html{
     font-family: BarberChop;
     font-size: 72px;
     text-align:center;
+}
+#countdown{
+    font-size:50px;
+    text-align:center;
+    margin-top:10%;
 }
 div{
     padding:1px;
