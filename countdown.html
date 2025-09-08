@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <link rel="stylesheet" href="RushdownResortStyle.css">
-    <script>
+<script>
 var curday;
 var secTime;
 var ticker;
@@ -51,6 +51,13 @@ function tick() {
  document.getElementById("seconds").innerHTML = ( (secs < 10) ? "0" : "" ) + secs;
 }
 </script>
+<header>
+<div style="text-align:left">
+    <a href="Players.html"><img id="logo" src="RUSHDOWN FINAL FINAL.png"></a>
+    <a href="About.html"><img id="logo" src="RUSHDOWN FINAL FINAL.png"></a>
+    <a href="countdown.html"><img id="logo2" src="mrbadguyswildrideLOGOFINALFINAL.png"></a>
+</div>
+</header>
 <body id="countdown" onload="getSeconds();">
     <h1 style="font-family:Barberchop;">Wild Ride Countdown Timer!</h1>
     <h1 style="font-family:BarberChop">Live in <span class="days" id="days"></span><span class="smalltext"> days,</span>

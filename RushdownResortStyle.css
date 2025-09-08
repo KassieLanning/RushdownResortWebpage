@@ -27,8 +27,8 @@ html{
 #countdown{
     font-size:50px;
     text-align:center;
-    margin-top:10%;
 }
-div{
-    padding:1px;
+#playerDiv{
+    display:inline-block;
+    margin-left:20px;
 }

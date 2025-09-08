@@ -1,4 +1,72 @@
 <!DOCTYPE html>
 <html>
+    <link rel="Stylesheet" href="RushdownResortStyle.css">
+    <style>
+  .container {
+  position: relative;
+  width: 20%;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  font-family: BarberChop
+}
+.subtitle {
+    background-color:white;
+    color:black;
+    text-align:center;
+    border-radius:10px;
+    font-family:Barberchop;
+}
+
+.container:hover .image {
+  opacity: 0.5;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #53a4e0;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+</style>
     <title>Players | Rushdown Resort</title>
+    <header>
+        <div>
+    <a href="Players.html"><img id="logo" src="RUSHDOWN FINAL FINAL.png"></a>
+    <a href="About.html"><img id="logo" src="RUSHDOWN FINAL FINAL.png"></a>
+    <a href="countdown.html"><img id="logo2" src="mrbadguyswildrideLOGOFINALFINAL.png"></a>
+    <h1 id="pageTitle">Players of the Resort</h1>
+</div>
+    </header>
+    <body>
+        <div class="container" id="playerDiv">
+            <a href="https://x.com/sauceque_vn"><img src="SauceQue Playercard V1.png" alt="SauceQue" class="image"></a>
+        </div>
+        <div class="container" id="playerDiv">
+            <a href="https://x.com/UkiyoFGC"><img src="Ukiyo Playercard V1.png" alt="Ukyio" class="image"></a>
+        </div>
+        <div class="container" id="playerDiv">
+            <a href="https://x.com/LoveboundFGC"><img src="Lovebound Playercard V1.png" alt="Lovebound" class="image"></a>
+        </div>
+    </body>
 </html>
