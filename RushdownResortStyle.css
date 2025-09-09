@@ -25,12 +25,18 @@ html{
     text-align:center;
 }
 #countdown{
-    font-size:50px;
     text-align:center;
+    font-family:barberchop;
 }
 #playerDiv{
     display:inline-block;
     margin-left:20px;
+}
+#headerDiv{
+    background-color: white;
+    border-radius:7px;
+    margin-top:0px;
+    margin-bottom: 50px;
 }
 div{
     padding:1px;
