@@ -37,4 +37,17 @@ div{
 }
 button{
     border-radius: 7px;
+    background-color:#f28400;
+    color:white;
+    font-size:16px;
+    font-family: BarberChop;
+    font-kerning: auto;
+    margin: 4px 2px;
+    display: inline-block;
+    cursor:pointer;
+    transition-duration: 0.4s;
+}
+button:hover{
+    background-color:white;
+    color:black;
 }
