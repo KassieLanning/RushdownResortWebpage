@@ -35,3 +35,6 @@ html{
 div{
     padding:1px;
 }
+button{
+    border-radius: 7px;
+}
