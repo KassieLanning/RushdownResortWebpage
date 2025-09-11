@@ -5,11 +5,11 @@
 var curday;
 var secTime;
 var ticker;
- 
+var timezone = getTimezoneOffset();
 function getSeconds() {
  var nowDate = new Date();
  var dy = 0 ; //Sunday through Saturday, 0 to 6
- var countertime = new Date(nowDate.getFullYear(),nowDate.getMonth(),nowDate.getDate(),16,0,0); //20 out of 24 hours = 8pm
+ var countertime = new Date(Date.UTC(nowDate.getFullYear(),nowDate.getMonth(),nowDate.getDate(),21,0,0)); //20 out of 24 hours = 8pm
  
  var curtime = nowDate.getTime(); //current time
  var atime = countertime.getTime(); //countdown time
@@ -43,12 +43,22 @@ function tick() {
  secs %= 3600;
  var mins = Math.floor(secs/60);
  secs %= 60;
+ if(days == 6){
+     if(hours == 0){
+         if(minutes == 0){
+             if(secs == 0){
+                 var num = num + 1;
+             }
+         }
+     }
+ }
  
  //update the time display
  document.getElementById("days").innerHTML = curday;
  document.getElementById("hours").innerHTML = ((hours < 10 ) ? "0" : "" ) + hours;
  document.getElementById("minutes").innerHTML = ( (mins < 10) ? "0" : "" ) + mins;
  document.getElementById("seconds").innerHTML = ( (secs < 10) ? "0" : "" ) + secs;
+ document.getElementByID("num").innerHTML = num;
 }
 </script>
 <header>
@@ -66,7 +76,7 @@ function tick() {
         <span class="hours" id="hours"></span><span class="smalltext"> hours,</span>
         <span class="minutes" id="minutes"></span><span class="smalltext"> minutes,</span>
         <span class="seconds" id="seconds"></span><span class="smalltext"> seconds</span>
+        <br><span class="num" id="num"></span><span class="smalltext">th WildRide</span>
         </h1>
-        <p class="blink">timer is in CST</p>
     </body>
 </html>
