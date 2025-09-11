@@ -42,15 +42,6 @@ function tick() {
  secs %= 3600;
  var mins = Math.floor(secs/60);
  secs %= 60;
- if(days == 6){
-     if(hours == 0){
-         if(minutes == 0){
-             if(secs == 0){
-                 var num = num + 1;
-             }
-         }
-     }
- }
  
  //update the time display
  document.getElementById("days").innerHTML = curday;
