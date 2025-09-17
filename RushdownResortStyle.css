@@ -123,6 +123,9 @@ button:hover{
     background-color:white;
     color:black;
 }
+div{
+    padding:1px;
+}
 .blink{
     animation: blinker 1.5s linear infinite;
 }
