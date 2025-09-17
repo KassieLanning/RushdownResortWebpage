@@ -5,12 +5,16 @@
   .container {
   position: relative;
   width: 20%;
-  margin-left:39%;
+  background-color:rgb(226, 226, 226);
+  border-radius:70px 70px 10px 10px;
+  display:inline-block;
+  height: 420px;
+  top:0px;
 }
 
 .image {
   opacity: 1;
-  display: block;
+  display: inline-block;
   width: 100%;
   height: auto;
   transition: .5s ease;
@@ -20,7 +24,7 @@
 .middle {
   transition: .5s ease;
   opacity: 0;
-  position: absolute;
+  position: relative;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -61,6 +65,7 @@
       </header>
   <body>
     <h1 id="pageTitle">Rushdown Resort</h1>
+    <div id="subHeader" style="left:900px;">Past Stream!</div>
     <div id="twitchEmbed">
     <iframe
       src="https://player.twitch.tv/?video=2566593541&parent=127.0.0.1"
@@ -69,6 +74,8 @@
       allowfullscreen>
     </iframe>
     </div>
+    <br>
+    <div id="subHeader" style="left:65px;">Merchandise</div>
     <div class="container">
       <img src="assets/I Survived the Wild Ride White Shirt.png" alt="I Survied Mr. Badguy's Wild Ride White T-Shirt" class="image" style="width:100%">
       <div class="middle">

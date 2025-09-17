@@ -6,9 +6,25 @@ html{
 .hide{
     display:none;
 }
-#twitchEmbed{
-    left:22%;
+#subHeader{
     position:relative;
+    width:150px;
+    font-size:24px;
+    text-align: center;
+    text-decoration:underline 7px;
+    font-family:BarberChop;
+    bottom:10px
+}
+#twitchEmbed{
+    left:40%;
+    position:relative;
+    border:5px solid;
+    border-color:#c94f52;
+    width:804px;
+    height:454px;
+    display:inline-block;
+    top:0px;
+    background-color:white
 }
 #logo{
     width:5%;
@@ -90,9 +106,6 @@ html{
     top:0px;
     left:0px;
     z-index:99 !important;
-}
-div{
-    padding:1px;
 }
 button{
     border-radius: 7px;
